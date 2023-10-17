@@ -14,11 +14,11 @@ import kotlin.system.measureTimeMillis
 
 
 fun main() {
-    coldFlow()
+    //coldFlow()
     //cancelFlow()
     //flowOperators()
     //terminalFlowOperators()
-    //bufferFlow()
+    bufferFlow()
     //conflationFlow()
     //multiFlow()
     //flatFlows()
@@ -194,23 +194,23 @@ fun terminalFlowOperators() {
         newTopic("Operadores Flow Terminales")
         newTopic("List")
         val list = getDataByFlow()
-            //.toList()
+            .toList()
         println("List: $list")
 
         newTopic("Single")
         val single = getDataByFlow()
-            //.take(1)
-            //.single()
+            .take(1)
+            .single()
         println("Single: $single")
 
         newTopic("First")
         val first = getDataByFlow()
-            //.first()
+            .first()
         println("First: $first")
 
         newTopic("Last")
         val last = getDataByFlow()
-            //.last()
+            .last()
         println("First: $last")
 
         newTopic("Reduce")
